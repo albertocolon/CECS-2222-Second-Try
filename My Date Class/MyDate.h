@@ -5,8 +5,8 @@
 //  Created by Alberto Colon on 8/26/23.
 //
 
-#ifndef LabDate_h
-#define LabDate_h
+#ifndef LabDate.h
+#define LabDate.h
 
 #include <iostream>
 
