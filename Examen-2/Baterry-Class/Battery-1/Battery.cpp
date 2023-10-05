@@ -50,12 +50,17 @@ void Battery::setCharge(double charge)
 
 void Battery::showInfo() const
 {
+    cout << "Esta batería tiene " << charge << " V. de capacidad de carga." << endl;
 }
 
 ostream & operator << (ostream & out, const Battery & aBattery)
 {
+    out << "Esta bateria tiene " << aBattery.charge << " V. de capacidad." << endl;
+    return (out);
 }
 
 istream & operator >> (istream & in, Battery & aBattery)
 {
+    in >> aBattery.charge;
+    return (in);
 }
