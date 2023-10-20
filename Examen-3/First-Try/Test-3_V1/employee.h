@@ -32,9 +32,9 @@ class Employee
 
         virtual double calculatePay() const = 0;
 
-        // void askedInfo() const; 
+        //virtual void askedInfo() const; 
         //EVEN THAT IS COMMENTED HERE, THE ASKEDINFO FUNCTION, NEEDS TO BE ADD IT ON THE HANDWRTTEN EXAM.
-        void displayInfo() const;
+        virtual void displayInfo() const;
 
 };
 

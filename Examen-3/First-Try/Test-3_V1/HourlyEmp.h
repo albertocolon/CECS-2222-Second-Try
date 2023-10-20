@@ -26,6 +26,12 @@ class HourlyEmp : public Employee
 
         const double& getHourlyRate() const;
         const double& getHoursWorked() const;
+
+        virtual double calculatePay() const;
+        //virtual void askedInfo() const; 
+        //EVEN THAT IS COMMENTED HERE, THE ASKEDINFO FUNCTION, NEEDS TO BE ADD IT ON THE HANDWRTTEN EXAM.
+        virtual void displayInfo() const;
+
 };
 
 #endif // HOURLYEMP_H
