@@ -31,27 +31,27 @@ HourlyEmp&HourlyEmp::HourlyEmp::operator=(const HourlyEmp& anHourlyEmp)
 
 void HourlyEmp::setHourlyRate(const double& hourlyRate)
 {
-
+    this->hourlyRate = hourlyRate;
 }
 
 void HourlyEmp::setHoursWorked(const double& hoursWorked)
 {
-
+    this->hoursWorked = hoursWorked;
 }
 
 const double& HourlyEmp::getHourlyRate() const
 {
-
+    return(this->hourlyRate);
 }
 
 const double& HourlyEmp::getHoursWorked() const
 {
-
+    return(this->hoursWorked);
 }
 
 double HourlyEmp::calculatePay() const
 {
-
+    return(this->hourlyRate * this->hoursWorked);
 }
 
 /*void HourlyEmp::askedInfo() const
@@ -63,5 +63,7 @@ double HourlyEmp::calculatePay() const
 
 void HourlyEmp::displayInfo() const
 {
-
+    cout << "At the hourly rate: " << this->hourlyRate << " and the hours worked: " << this->hoursWorked << endl;
+    cout << "Your pay is: " << calculatePay() << endl;
+    Employee::displayInfo();
 }
