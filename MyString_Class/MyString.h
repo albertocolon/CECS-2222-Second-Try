@@ -102,11 +102,11 @@ class MyString
     MyString & operator +=(const char * s);
     MyString & operator +=(char ch);
 
-    MyString & operator ++();                   // ++ Object -> to uppercase
-    MyString operator ++(int);                  // Object ++ -> to uppercase
+    MyString & operator ++();                    // ++ Object -> to uppercase
+    MyString operator ++(int);                   // Object ++ -> to uppercase
     
-    MyString & operator --();                   // -- Object -> to lowercase
-    MyString operator --(int);                // Object -- -> to lowercase
+    MyString & operator --();                    // -- Object -> to lowercase
+    MyString operator --(int);                   // Object -- -> to lowercase
 };
 
 #endif

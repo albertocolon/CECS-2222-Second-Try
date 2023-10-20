@@ -1,4 +1,9 @@
 #include "employee.h"
+#include <iostream>
+#include <string>
+
+using namespace std;
+
 
 // Constructor
 Employee::Employee(const string& name, const int& employeeID) : name(name), employeeID(employeeID) {}
@@ -38,8 +43,20 @@ const int& Employee::getEmployeeID() const {
     return employeeID;
 }
 
+// Ask for employee information
+/*void Employee::askedInfo() const 
+{
+    cout << "Enter employee name: ";
+    cin.ignore();
+    getline(cin, this->name);
+    cout << "Enter employee ID: ";
+    cin >> this->employeeID;
+    cin.ignore(); // ignore the newline character left by cin
+}*/
+
 // Display employee information
 void Employee::displayInfo() const {
     cout << "Name: " << name << endl;
     cout << "Employee ID: " << employeeID << endl;
 }
+

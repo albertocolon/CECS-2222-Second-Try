@@ -11,6 +11,9 @@ using namespace std;
 class Employee
 {
     protected:
+        //****************************************************************************
+        // Very important to use MyString on the handwritten code instead of string. *
+        //****************************************************************************
         string name;
         int employeeID;
     public:
@@ -28,6 +31,9 @@ class Employee
 
 
         virtual double calculatePay() const = 0;
+
+        // void askedInfo() const; 
+        //EVEN THAT IS COMMENTED HERE, THE ASKEDINFO FUNCTION, NEEDS TO BE ADD IT ON THE HANDWRTTEN EXAM.
         void displayInfo() const;
 
 };
