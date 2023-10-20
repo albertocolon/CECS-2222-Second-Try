@@ -43,7 +43,8 @@ const int& Employee::getEmployeeID() const {
     return employeeID;
 }
 
-// Ask for employee information
+//*****************************************************************************************
+// NEEDS TO BE ADD IT ON THE HANDWRTTEN EXAM. THE WAY THE PROFESSOR WANTS IT. <--
 /*void Employee::askedInfo() const 
 {
     cout << "Enter employee name: ";
@@ -53,6 +54,7 @@ const int& Employee::getEmployeeID() const {
     cin >> this->employeeID;
     cin.ignore(); // ignore the newline character left by cin
 }*/
+//*****************************************************************************************
 
 // Display employee information
 void Employee::displayInfo() const {
