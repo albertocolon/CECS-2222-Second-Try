@@ -18,7 +18,7 @@ CommissionEmp::CommissionEmp(const CommissionEmp& aCommissionEmp)
 CommissionEmp::~CommissionEmp()
 { }
 
-CommissionEmp&CommissionEmp::CommissionEmp::operator=(const CommissionEmp& aCommissionEmp)
+CommissionEmp& CommissionEmp::operator=(const CommissionEmp& aCommissionEmp)
 {
     if (this != &aCommissionEmp) {
         Employee::operator=(aCommissionEmp);
