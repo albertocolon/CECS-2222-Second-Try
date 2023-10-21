@@ -18,7 +18,7 @@ HourlyEmp::HourlyEmp(const HourlyEmp& anHourlyEmp)
 HourlyEmp::~HourlyEmp()
 { }
         
-HourlyEmp&HourlyEmp::HourlyEmp::operator=(const HourlyEmp& anHourlyEmp)
+HourlyEmp&HourlyEmp::operator=(const HourlyEmp& anHourlyEmp)
 {
     if (this != &anHourlyEmp) {
         Employee::operator=(anHourlyEmp);
